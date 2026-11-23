@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-// Ilustraciones propias sin dependencias de imágenes externas.
 export function Paisaje({ id }) {
   const paletas = {
     'san-pedro': ['#f7c693', '#d58859', '#9b4e38', '#fce5b6'],

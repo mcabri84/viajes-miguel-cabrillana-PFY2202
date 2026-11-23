@@ -80,7 +80,7 @@ El catálogo se carga con `useState` y `useEffect`, cancelando peticiones al des
 - Pruebas de integración: destinos REST, opciones GraphQL mediante Apollo, listas vacías, destino inexistente y error HTTP 500.
 - Chrome: catálogo, selección de San Pedro, vuelos y hoteles con precios y fechas, disponibilidad y agotados, regreso al catálogo, Puerto Varas sin resultados y recarga de la ruta de detalle.
 - Chrome a 390 píxeles: catálogo y detalle sin desbordamiento horizontal.
-- Firefox: Miguel confirmó que abre correctamente y muestra los elementos esperados. Esta comprobación fue manual; no se dispone de captura ni versión registrada de Firefox.
+- Firefox: apertura y visualización de los elementos esperados verificadas manualmente. Sin captura ni versión del navegador registrada.
 - Compilación de producción: verificada localmente y en GitHub Actions.
 - GitHub Pages: catálogo REST, detalle GraphQL con vuelos y hoteles y recarga de la ruta de San Pedro verificados en Chrome sobre la URL pública. Captura disponible en `evidencias/05-publicacion-github-pages.png`.
 
@@ -96,4 +96,4 @@ El workflow de GitHub Actions instala las dependencias, ejecuta las pruebas, com
 
 ## Entrega en AVA
 
-Compartir con el docente la URL del repositorio público. El README incluye el enlace de GitHub Pages para probar la aplicación sin instalarla. La entrega en AVA debe completarse desde la cuenta del estudiante; no se ha enviado automáticamente.
+Compartir con el docente la URL del repositorio público. El README incluye el enlace de GitHub Pages para probar la aplicación sin instalarla.

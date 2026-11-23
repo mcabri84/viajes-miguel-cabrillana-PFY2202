@@ -1,4 +1,3 @@
-// Datos ficticios para la actividad académica. Todos los precios están en CLP.
 export const destinos = [
   {
     id: 'san-pedro', nombre: 'San Pedro de Atacama', pais: 'Chile',

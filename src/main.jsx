@@ -4,7 +4,6 @@ import './index.css'
 import App from './App.jsx'
 
 async function iniciarAplicacion() {
-  // Esta entrega usa APIs simuladas también en la demostración publicada.
   const { worker } = await import('./mocks/browser.js')
   await worker.start({
     serviceWorker: { url: `${import.meta.env.BASE_URL}mockServiceWorker.js` },
