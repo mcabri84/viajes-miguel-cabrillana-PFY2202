@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: REST entrega destinos con país y actividades
+ok 1 - REST entrega destinos con país y actividades
+  ---
+  duration_ms: 383.693271
+  type: 'test'
+  ...
+# Subtest: Apollo consulta vuelos y hoteles del destino seleccionado
+ok 2 - Apollo consulta vuelos y hoteles del destino seleccionado
+  ---
+  duration_ms: 1419.876633
+  type: 'test'
+  ...
+# Subtest: Un destino sin disponibilidad devuelve listas vacías
+ok 3 - Un destino sin disponibilidad devuelve listas vacías
+  ---
+  duration_ms: 476.478974
+  type: 'test'
+  ...
+# Subtest: Un destino inexistente produce un error GraphQL comprensible
+ok 4 - Un destino inexistente produce un error GraphQL comprensible
+  ---
+  duration_ms: 476.172486
+  type: 'test'
+  ...
+# Subtest: El mock permite simular un error HTTP del servicio REST
+ok 5 - El mock permite simular un error HTTP del servicio REST
+  ---
+  duration_ms: 5.983346
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2779.808368
