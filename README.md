@@ -6,6 +6,9 @@ Aplicación académica de una agencia de viajes que permite explorar destinos y 
 **Asignatura:** Desarrollo Frontend II — PFY2202  
 **Actividad:** Sumativa 2 — Semana 5 — Integrando nuestro frontend con backend
 
+**Aplicación publicada:** [Abrir Rumbo](https://mcabri84.github.io/viajes-miguel-cabrillana-PFY2202/)  
+**Código fuente:** [Repositorio público](https://github.com/mcabri84/viajes-miguel-cabrillana-PFY2202)
+
 ## Funcionamiento
 
 El catálogo obtiene cuatro destinos por REST, con nombre, país, descripción y actividades populares. Al seleccionar un destino, la aplicación consulta sus vuelos y hoteles mediante GraphQL y Apollo Client. Las opciones muestran precios en CLP, fechas y disponibilidad. Se distinguen las opciones agotadas y los destinos sin resultados.
@@ -64,9 +67,9 @@ src/
   main.jsx        Inicialización de MSW y React
 public/
   mockServiceWorker.js
- tests/
+tests/
   api.test.js     Pruebas de integración
- evidencias/      Capturas de Chrome y resultados de pruebas
+evidencias/       Capturas de Chrome y resultados de pruebas
 .github/workflows/deploy.yml
 ```
 
@@ -78,14 +81,19 @@ El catálogo se carga con `useState` y `useEffect`, cancelando peticiones al des
 - Chrome: catálogo, selección de San Pedro, vuelos y hoteles con precios y fechas, disponibilidad y agotados, regreso al catálogo, Puerto Varas sin resultados y recarga de la ruta de detalle.
 - Chrome a 390 píxeles: catálogo y detalle sin desbordamiento horizontal.
 - Firefox: Miguel confirmó que abre correctamente y muestra los elementos esperados. Esta comprobación fue manual; no se dispone de captura ni versión registrada de Firefox.
-- Compilación de producción: verificada localmente. La verificación del despliegue público está pendiente.
+- Compilación de producción: verificada localmente y en GitHub Actions.
+- GitHub Pages: catálogo REST, detalle GraphQL con vuelos y hoteles y recarga de la ruta de San Pedro verificados en Chrome sobre la URL pública. Captura disponible en `evidencias/05-publicacion-github-pages.png`.
 
 Las capturas disponibles están en `evidencias/`.
 
 ## Publicación
 
-Repositorio previsto: `viajes-miguel-cabrillana-PFY2202`.
+Repositorio público: `viajes-miguel-cabrillana-PFY2202`.
 
 El workflow de GitHub Actions instala las dependencias, ejecuta las pruebas, compila y publica `dist/` en GitHub Pages al actualizar `main`. En Settings → Pages, la fuente debe ser GitHub Actions.
 
-**Estado actual:** configuración preparada; repositorio y despliegue público pendientes. Los enlaces verificados se incorporarán después de publicar.
+**Estado actual:** repositorio público y GitHub Pages publicados. La ejecución de despliegue que completó las pruebas y la compilación puede consultarse en [GitHub Actions](https://github.com/mcabri84/viajes-miguel-cabrillana-PFY2202/actions/runs/45114854203).
+
+## Entrega en AVA
+
+Compartir con el docente la URL del repositorio público. El README incluye el enlace de GitHub Pages para probar la aplicación sin instalarla. La entrega en AVA debe completarse desde la cuenta del estudiante; no se ha enviado automáticamente.
